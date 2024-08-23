@@ -23,6 +23,16 @@
     .font-popins{
         font-family: "Poppins", sans-serif
     }
+
+    .background-section {
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2rem 1rem; /* Add padding to ensure space around the content */
+    height: auto; /* Let the section height adjust based on content */
+}
+
    </style>
    <script>
     tailwind.config = {
@@ -219,9 +229,9 @@ accents, and large windows that flood the space with natural light.
             featuring weathered wood, sleek metal accents</p>
          </div>
          <!-- grid card -->
-          <div class="grid grid-cols-4 gap-4 text-center">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
             <!-- card -->
-             <div class="rounded-lg shadow-md bg-gray-200 overflow-hidden">
+             <div class="rounded-lg shadow-md bg-red-200 overflow-hidden">
               <img class="mx-auto pt-4" src="images/vision.png" alt="">
                
               <div class="p-4">
@@ -233,7 +243,7 @@ accents, and large windows that flood the space with natural light.
 
              </div>
 
-             <div class="rounded-lg shadow-md bg-green-200 overflow-hidden">
+             <div class="rounded-lg shadow-md bg-yellow-200 overflow-hidden">
               <img class="mx-auto pt-4" src="images/vision.png" alt="">
                
               <div class="p-4">
@@ -245,7 +255,7 @@ accents, and large windows that flood the space with natural light.
 
              </div>
              
-             <div class="rounded-lg shadow-md bg-red-200 overflow-hidden">
+             <div class="rounded-lg shadow-md bg-green-200 overflow-hidden">
               <img class="mx-auto pt-4" src="images/vision.png" alt="">
                
               <div class="p-4">
@@ -275,12 +285,86 @@ accents, and large windows that flood the space with natural light.
       </section>
 
 
+  
+
+<section class="background-section py-8 lg:py-16 px-4">
+  <div class="container mx-auto">
+      <div class="text-center">
+          <button class="btn btn-success bg-color-primary mt-8">Let's Connect</button>
+      </div>
+      <div class="text-center mb-8">
+          <h1 class="text-3xl md:text-6xl font-bold mb-5">Let's Discuss Next Project</h1>
+          <p class="text-gray-500">
+              The barn house captivates with its blend of rustic charm and modern sophistication, 
+              featuring weathered wood, sleek metal accents. The barn house captivates with its blend 
+              of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+      </div>
+  
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-center">
+          <div class="mt-8">
+              <input class="rounded-full w-full h-16 md:h-20" type="text" placeholder="Name">
+          </div>
+          <div class="mt-8">
+              <input class="rounded-full w-full h-16 md:h-20" type="text" placeholder="Email">
+          </div>
+          <div class="mt-8">
+              <input class="rounded-full w-full h-16 md:h-20" type="text" placeholder="Phone">
+          </div>
+          <div class="mt-8">
+              <input class="rounded-full w-full h-16 md:h-20" type="text" placeholder="Message">
+          </div>
+  
+          <!-- New input field that spans 2 columns on large screens -->
+          <div class="mt-8 md:col-span-2">
+              <input class="rounded-full w-full h-48 md:h-60" type="text" placeholder="Additional Information">
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+      
+
+
    
     </main>
 
     <!-- footer section -->
 
-     <footer>
+     <footer class="py-8 lg:py-24  bg-black text-white">
+        
+      <div class="container mx-auto">
+      <div class="text-center mb-8 ">
+        <h1 class="text-3xl md:text-6xl font-bold mb-5  "> Our Works Process</h1>
+        <p class="text-gray-500  ">The barn house captivates with its blend of rustic charm and modern sophistication, 
+          featuring weathered wood, sleek metal accents
+          The barn house captivates with its blend of rustic charm and modern sophistication, 
+          featuring weathered wood, sleek metal accents</p>
+       </div>
+       <div class=" mb-8 grid grid-cols-1 md:grid-cols-5 gap-4 text-center">
+        <div>
+          <a>Home</a>
+        </div>
+        <div>
+          <a>service</a>
+        </div>
+        <div>
+          <a>Portfolio</a>
+        </div>
+        <div>
+          <a>blog</a>
+        </div>
+        <div>
+          <a>Contact Us</a>
+        </div>
+      
+      
+       </div>
+      </div>
+
 
      </footer>
 </body>
