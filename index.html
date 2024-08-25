@@ -54,50 +54,29 @@
 
     <header class="container mx-auto mt-8">
     
-
-      <nav>
-        <div class="navbar bg-base-100">
-            <!-- Navbar Start -->
-            <div class="navbar-start">
-                <!-- Dropdown for mobile view -->
-                <div class="dropdown lg:hidden">
-                    <div tabindex="0" role="button" class="btn btn-ghost">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-5 w-5"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16"/>
-                        </svg>
-                    </div>
-                    <ul
-                        tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <li><a class="font-bold">Home</a></li>
-                        <li><a>Services</a></li>
-                        <li><a>Portfolio</a></li>
-                        <li><a>Blogs</a></li>
-                        <li><a>Contact Us</a></li>
-                    </ul>
+ <!-- Navbar Start -->
+ <nav>
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+            <!-- Dropdown for mobile view -->
+            <div class="dropdown lg:hidden">
+                <div tabindex="0" role="button" class="btn btn-ghost">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16"/>
+                    </svg>
                 </div>
-                
-                <!-- Logo for all screens -->
-                <div class="flex text-4xl font-bold gap-2">
-                    <span class="flex items-center justify-center w-8 h-8 rounded-full bg-lime-400 -rotate-45">
-                        <i class="fa-solid fa-arrow-right text-black text-sm"></i>
-                    </span>
-                    Rinterio
-                </div>
-            </div>
-    
-            <!-- Centered menu visible on large screens -->
-            <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
+                <ul
+                    tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                     <li><a class="font-bold">Home</a></li>
                     <li><a>Services</a></li>
                     <li><a>Portfolio</a></li>
@@ -105,20 +84,47 @@
                     <li><a>Contact Us</a></li>
                 </ul>
             </div>
-    
-            <!-- End section visible on large screens -->
-            <div class="navbar-end hidden lg:flex gap-10">
-                <div><i class="fa-solid fa-magnifying-glass text-2xl"></i></div>
-                <div><i class="fa-solid fa-cart-shopping text-2xl"></i></div>
-                <button class="btn btn-success bg-color-primary flex items-center gap-2 px-10">
-                    Book Consult
-                    <span class="flex items-center justify-center rounded-full bg-black p-2 -rotate-45">
-                        <i class="fa-solid fa-arrow-right text-white"></i>
-                    </span>
-                </button>
+            
+            <!-- Logo for all screens -->
+            <div class="flex text-4xl font-bold gap-2">
+                <span class="flex items-center justify-center w-8 h-8 rounded-full bg-lime-400 -rotate-45">
+                    <i class="fa-solid fa-arrow-right text-black text-sm"></i>
+                </span>
+                Rinterio
             </div>
         </div>
-    </nav>
+
+        <!-- Centered menu visible on large screens -->
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a class="font-bold">Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- End section visible on large screens -->
+        <div class="navbar-end hidden lg:flex gap-10">
+            <!-- Search Icon -->
+            <div class="flex items-center justify-center w-10 h-10 rounded-full  cursor-pointer hover:bg-gray-200">
+                <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+            </div>
+            <!-- Cart Icon -->
+            <div class="flex items-center justify-center w-10 h-10 rounded-full bg-white  cursor-pointer hover:bg-gray-200">
+                <i class="fa-solid fa-cart-shopping text-2xl"></i>
+            </div>
+            <button class="btn btn-success bg-color-primary flex items-center gap-2 px-10">
+                Book Consult
+                <span class="flex items-center justify-center rounded-full bg-black p-2 -rotate-45">
+                    <i class="fa-solid fa-arrow-right text-white"></i>
+                </span>
+            </button>
+        </div>
+    </div>
+</nav>
+
     
   
      <!-- banner -->
@@ -139,7 +145,7 @@
                   </p>
                   <button class="btn btn-success bg-lime-200 flex items-center justify-center mx-auto">
                       View Details
-                      <span class="flex items-center justify-center rounded-full bg-lime-400 p-2 ml-3">
+                      <span class="flex items-center justify-center rounded-full bg-lime-400 p-2 ml-3 -rotate-45">
                           <i class="fa-solid fa-arrow-right text-black"></i>
                       </span>
                   </button>
@@ -223,9 +229,9 @@
       
       
   
-       
+       <!-- how we works -->
   <section class="py-8 lg:py-24 container mx-auto">
-    <!-- Button Above the Section -->
+   
     <div class="text-center mb-8">
       <button class="bg-white text-black border border-gray-300 px-6 py-3 rounded-full font-bold shadow-md hover:bg-gray-100 flex items-center justify-center mx-auto">
         <span class="flex items-center justify-center rounded-full  p-2 mr-3">
@@ -296,24 +302,24 @@
       <section class="py-8 lg:py-24 container mx-auto">
         <!-- title -->
         <div class="text-center mb-8">
-
-          <div class="text-center mb-8">
-            <button class="bg-white text-black border border-gray-300 px-6 py-3 rounded-full shadow-md hover:bg-gray-100 flex items-center justify-center mx-auto">
-              <span class="flex items-center justify-center rounded-full  p-2 mr-3">
-                <i class="fa-solid fa-arrow-right text-black"></i>
-              </span>
-              Explore our Latest works
-            </button>
-          </div>
-
-
+            <div class="text-center mb-8">
+                <button class="bg-lime-100 text-black border border-gray-300 px-6 py-3 rounded-full shadow-md hover:bg-gray-100 flex items-center justify-center mx-auto">
+                    <span class="flex items-center justify-center rounded-full p-2 mr-3">
+                        <i class="fa-solid fa-arrow-right text-black"></i>
+                    </span>
+                    Explore our Latest Works
+                </button>
+            </div>
+    
             <h1 class="text-3xl md:text-6xl font-bold mb-5">Our Latest Portfolio</h1>
             <p class="text-gray-500">
-                The barn house captivates with its blend of rustic charm and modern sophistication,
-                featuring weathered wood, sleek metal accents. The barn house captivates with its blend of rustic charm and modern sophistication,
-                featuring weathered wood, sleek metal accents.
+                Our latest project focuses on crafting buildings that combine
+                stunning design with top-notch safety features. We ensure every
+                structure is not only visually appealing but also built to the
+                highest safety standards.
             </p>
         </div>
+    
         <!-- grid card -->
         <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
             <!-- card 1 -->
@@ -322,53 +328,62 @@
                     <div class="w-full md:w-1/2 flex justify-center">
                         <img class="pt-4" src="images/img1.png" alt="">
                     </div>
-                    <div class="w-full md:w-1/2 flex flex-col justify-center p-4 text-center">
-                        <h2 class="font-bold text-xl">Concept</h2>
+                    <div class="w-full md:w-1/2 flex flex-col justify-center p-4 text-left">
+                        <h2 class="font-bold text-xl">Commercial</h2>
                         <p class="text-gray-500">The barn house captivates with its blend of rustic charm and modern</p>
+                        <div class="flex items-left justify-left mt-4">
+                            <h2 class="font-bold text-xl text-left">View Details</h2>
+                            <span class="ml-2 flex items-left justify-left rounded-full bg-lime-400 p-2 -rotate-45">
+                                <i class="fa-solid fa-arrow-right text-black"></i>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
     
             <!-- card 2 -->
-            <div class="rounded-lg shadow-md  overflow-hidden  mx-auto col-span-1">
+            <div class="rounded-lg shadow-md overflow-hidden mx-auto col-span-1">
                 <div class="flex flex-col md:flex-row items-center justify-center h-full p-4">
-                    <div class="w-full  flex justify-center">
+                    <div class="w-full flex justify-center">
                         <img class="pt-4" src="images/img2.png" alt="">
                     </div>
-                    
                 </div>
             </div>
     
             <!-- card 3 -->
-            <div class="rounded-lg shadow-md  overflow-hidden mx-auto">
+            <div class="rounded-lg shadow-md overflow-hidden mx-auto">
                 <div class="flex flex-col md:flex-row items-center justify-center h-full p-4">
-                    <div class="w-full  flex justify-center">
+                    <div class="w-full flex justify-center">
                         <img class="pt-4" src="images/img3.png" alt="">
                     </div>
-                   
                 </div>
             </div>
     
             <!-- card 4 -->
-            <div class="rounded-lg shadow-md  overflow-hidden lg:col-span-2 mx-auto">
+            <div class="rounded-lg shadow-md overflow-hidden lg:col-span-2 mx-auto">
                 <div class="flex flex-col md:flex-row items-center justify-center h-full p-4">
                     <div class="w-full md:w-1/2 flex justify-center">
                         <img class="pt-4" src="images/img4.png" alt="">
                     </div>
-                    <div class="w-full md:w-1/2 flex flex-col justify-center p-4 text-center">
-                        <h2 class="font-bold text-xl">Concept</h2>
+                    <div class="w-full md:w-1/2 flex flex-col justify-center p-4 text-left">
+                        <h2 class="font-bold text-xl">Nature Friendly</h2>
                         <p class="text-gray-500">The barn house captivates with its blend of rustic charm and modern</p>
+                        <div class="flex items-left justify-left mt-4">
+                          <h2 class="font-bold text-xl text-left">View Details</h2>
+                          <span class="ml-2 flex items-left justify-left rounded-full bg-lime-400 p-2 -rotate-45">
+                              <i class="fa-solid fa-arrow-right text-black"></i>
+                          </span>
+                      </div>
                     </div>
                 </div>
             </div>
-            <div class="rounded-lg shadow-md  overflow-hidden mx-auto">
-              <div class="flex flex-col md:flex-row items-center justify-center h-full p-4">
-                  <div class="w-full flex justify-center">
-                      <img class="pt-4" src="images/img5.png" alt="">
-                  </div>
-                  
-              </div>
-          </div>
+            <div class="rounded-lg shadow-md overflow-hidden mx-auto">
+                <div class="flex flex-col md:flex-row items-center justify-center h-full p-4">
+                    <div class="w-full flex justify-center">
+                        <img class="pt-4" src="images/img5.png" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     
@@ -419,94 +434,95 @@
     
 
 
-  
+  <!-- input field -->
 
-      <section class="background-section py-8 lg:py-16 px-4">
-        <div class="container mx-auto">
-            <div class="text-center mb-8">
-                <button class="bg-white text-black border border-gray-300 px-6 py-3 rounded-full shadow-md hover:bg-gray-100 flex items-center justify-center mx-auto">
-                    <span class="flex items-center justify-center rounded-full p-2 mr-3">
-                        <i class="fa-solid fa-arrow-right text-black"></i>
-                    </span>
-                    Explore our Latest works
-                </button>
-            </div>
-    
-            <div class="text-center mb-8">
-                <h1 class="text-3xl md:text-6xl font-bold mb-5">Let's Discuss Next Project</h1>
-                <p class="text-gray-500">
-                    Our next project focuses on nature-friendly architecture,
-                    blending sustainable design with the natural environment.
-                    We aim to create eco-conscious spaces that enhance harmony
-                    with nature while minimizing environmental impact.
-                </p>
-            </div>
-    
-            <form id="contactForm">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-center">
-                    <!-- Name Field -->
-                    <div class="mt-8">
-                        <input class="rounded-full w-full h-16 md:h-20 px-4 placeholder-gray-400" type="text" placeholder="Name *" required>
-                    </div>
-    
-                    <!-- Email Field -->
-                    <div class="mt-8">
-                        <input class="rounded-full w-full h-16 md:h-20 px-4 placeholder-gray-400" type="email" placeholder="Email *" required>
-                    </div>
-    
-                    <!-- Phone Field -->
-                    <div class="mt-8">
-                        <input class="rounded-full w-full h-16 md:h-20 px-4 placeholder-gray-400" type="text" placeholder="Phone *" required>
-                    </div>
-    
-                    <!-- Message Field -->
-                    <div class="mt-8">
-                        <input class="rounded-full w-full h-16 md:h-20 px-4 placeholder-gray-400" type="text" placeholder="Message *" required>
-                    </div>
-    
-                    <!-- Additional Information Field -->
-                    <div class="mt-8 md:col-span-2">
-                        <input class="rounded-full w-full h-48 md:h-60 px-4 placeholder-gray-400" type="text" placeholder="Additional Information">
-                    </div>
-    
-                    <!-- Full-width submit button -->
-                    <div class="mt-8 md:col-span-2">
-                        <button class="bg-lime-500 text-black font-bold w-full px-6 py-3 rounded-full shadow-md hover:bg-neutral-400 flex items-center justify-center" type="submit">
-                            Send Mail
-                            <span class="flex items-center justify-center w-8 h-8 rounded-full bg-neutral-950 -rotate-45 ml-3">
-                                <i class="fa-solid fa-arrow-right text-white text-sm"></i>
-                            </span>
-                        </button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    
-        <!-- JavaScript to handle form validation -->
-        <script>
-            document.getElementById('contactForm').addEventListener('submit', function(event) {
-                // Get all required fields
-                var requiredFields = document.querySelectorAll('#contactForm input[required]');
-                var allFilled = true;
-    
-                // Check if all required fields are filled
-                requiredFields.forEach(function(field) {
-                    if (!field.value.trim()) {
-                        allFilled = false;
-                        field.style.borderColor = 'red'; // Optional: Highlight the empty field
-                    } else {
-                        field.style.borderColor = ''; // Reset border color if filled
-                    }
-                });
-    
-                // If any field is empty, prevent form submission and show an alert
-                if (!allFilled) {
-                    event.preventDefault(); // Prevent form submission
-                    alert('Please fill in all required fields.');
-                }
-            });
-        </script>
-    </section>
+    <section class="background-section py-8 lg:py-16 px-4">
+      <div class="container mx-auto">
+          <div class="text-center mb-8">
+              <button class="bg-lime-100 text-black border border-gray-300 px-6 py-3 rounded-full shadow-md hover:bg-gray-100 flex items-center justify-center mx-auto">
+                  <span class="flex items-center justify-center rounded-full p-2 mr-3">
+                      <i class="fa-solid fa-arrow-right text-black"></i>
+                  </span>
+                  Let’s Connect
+              </button>
+          </div>
+  
+          <div class="text-center mb-8">
+              <h1 class="text-3xl md:text-6xl font-bold mb-5">Let's Discuss Next Project</h1>
+              <p class="text-gray-500">
+                  Our next project focuses on nature-friendly architecture,
+                  blending sustainable design with the natural environment.
+                  We aim to create eco-conscious spaces that enhance harmony
+                  with nature while minimizing environmental impact.
+              </p>
+          </div>
+  
+          <form id="contactForm">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-center">
+                  <!-- First Name Field -->
+                  <div class="mt-8">
+                      <input class="rounded-full w-full h-16 md:h-20 px-4 placeholder-gray-400" type="text" placeholder="First Name *" required>
+                  </div>
+  
+                  <!-- Last Name Field -->
+                  <div class="mt-8">
+                      <input class="rounded-full w-full h-16 md:h-20 px-4 placeholder-gray-400" type="text" placeholder="Last Name *" required>
+                  </div>
+  
+                  <!-- Phone Number Field -->
+                  <div class="mt-8">
+                      <input class="rounded-full w-full h-16 md:h-20 px-4 placeholder-gray-400" type="text" placeholder="Phone Number *" required>
+                  </div>
+  
+                  <!-- Email Field -->
+                  <div class="mt-8">
+                      <input class="rounded-full w-full h-16 md:h-20 px-4 placeholder-gray-400" type="email" placeholder="Email *" required>
+                  </div>
+  
+                  <!-- Additional Information Field -->
+                  <div class="mt-8 md:col-span-2">
+                      <input class="rounded-full w-full h-48 md:h-60 px-4 placeholder-gray-400" type="text" placeholder="Additional Information">
+                  </div>
+  
+                  <!-- Full-width submit button -->
+                  <div class="mt-8 md:col-span-2">
+                      <button class="bg-lime-500 text-black font-bold w-full px-6 py-3 rounded-full shadow-md hover:bg-neutral-400 flex items-center justify-center" type="submit">
+                          Send Mail
+                          <span class="flex items-center justify-center w-8 h-8 rounded-full bg-neutral-950 -rotate-45 ml-3">
+                              <i class="fa-solid fa-arrow-right text-white text-sm"></i>
+                          </span>
+                      </button>
+                  </div>
+              </div>
+          </form>
+      </div>
+  
+      <!-- JavaScript to handle form validation -->
+      <script>
+          document.getElementById('contactForm').addEventListener('submit', function(event) {
+              // Get all required fields
+              var requiredFields = document.querySelectorAll('#contactForm input[required]');
+              var allFilled = true;
+  
+              // Check if all required fields are filled
+              requiredFields.forEach(function(field) {
+                  if (!field.value.trim()) {
+                      allFilled = false;
+                      field.style.borderColor = 'red'; // Optional: Highlight the empty field
+                  } else {
+                      field.style.borderColor = ''; // Reset border color if filled
+                  }
+              });
+  
+              // If any field is empty, prevent form submission and show an alert
+              if (!allFilled) {
+                  event.preventDefault(); // Prevent form submission
+                  alert('Please fill in all required fields.');
+              }
+          });
+      </script>
+  </section>
+  
     
       
       
